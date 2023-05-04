@@ -1,36 +1,70 @@
 {
     "issues": [{
-            "id": 1,
-            "student": "",
+            "id": 2020034216,
+            "student": "Luyando Pongolani",
             "group": "8",
-            "course": 3,
-            "specialty": "",
-            "payment_at": "",
-            "faculty": "",
-            "cost": "",
-            "arrears": ""
+            "course": 8,
+            "specialty": "Software Engineering",
+            "payment_at": "04/02/2023",
+            "faculty": "Computer Science",
+            "cost": "K28 000",
+            "arrears": "0"
         },
         {
-            "id": 3,
-            "student": "",
-            "group": "",
-            "course": 1,
-            "specialty": "",
-            "payment_at": "",
-            "faculty": "",
-            "cost": "",
-            "arrears": ""
+            "id": 2020014328,
+            "student": "Christopher Beza",
+            "group": "8",
+            "course": 8,
+            "specialty": "Computer Systems Engineering",
+            "payment_at": "02/02/2023",
+            "faculty": "Computer Science",
+            "cost": "K28 000",
+            "arrears": "0"
         },
         {
-            "id": 2,
-            "student": "",
-            "group": "",
-            "course": 3,
-            "specialty": "",
-            "payment_at": "",
-            "faculty": "",
-            "cost": "",
-            "arrears": ""
-        }
+            "id": 2020043125,
+            "student": "Hassan Phiri",
+            "group": "8",
+            "course": 8,
+            "specialty": "Computer Systems Engineering",
+            "payment_at": "10/02/2023",
+            "faculty": "Computer Science",
+            "cost": "K28 000",
+            "arrears": "0"
+        },
+        {
+            "id": 2020083421,
+            "student": "Moses Simataa",
+            "group": "8",
+            "course": 8,
+            "specialty": "Computer Systems Engineering",
+            "payment_at": "10/03/2023",
+            "faculty": "Computer Science",
+            "cost": "K27 600",
+            "arrears": "K-400"
+        },
+          {
+            "id": 2020043097,
+            "student": "Abel Malusa",
+            "group": "8",
+            "course": 8,
+            "specialty": "Computer Systems Engineering",
+            "payment_at": "18/02/2023",
+            "faculty": "Computer Science",
+            "cost": "K28 000",
+            "arrears": "0"
+        },
+           {
+            "id": 2020043073,
+            "student": "Paul Chanda",
+            "group": "8",
+            "course": 8,
+            "specialty": "Computer Systems Engineering",
+            "payment_at": "03/03/2023",
+            "faculty": "Computer Science",
+            "cost": "K27 800",
+            "arrears": "K-200"
+        },
+               
     ]
 }

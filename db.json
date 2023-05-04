@@ -1,0 +1,36 @@
+{
+    "issues": [{
+            "id": 1,
+            "student": "",
+            "group": "8",
+            "course": 3,
+            "specialty": "",
+            "payment_at": "",
+            "faculty": "",
+            "cost": "",
+            "arrears": ""
+        },
+        {
+            "id": 3,
+            "student": "",
+            "group": "",
+            "course": 1,
+            "specialty": "",
+            "payment_at": "",
+            "faculty": "",
+            "cost": "",
+            "arrears": ""
+        },
+        {
+            "id": 2,
+            "student": "",
+            "group": "",
+            "course": 3,
+            "specialty": "",
+            "payment_at": "",
+            "faculty": "",
+            "cost": "",
+            "arrears": ""
+        }
+    ]
+}

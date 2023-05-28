@@ -1,0 +1,33 @@
+mat-card {
+    border: none;
+    background-color: #74ebd5;
+    background-image: linear-gradient(90deg, #74ebd5 -10%, #9caaeb 100%);
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+    margin-left: 27%;
+}
+
+body {
+    background-color: #74ebd5;
+    background-image: linear-gradient(90deg, #74ebd5 0%, #9caaeb 100%);
+    padding: 100px;
+    padding-right: 14%;
+    margin-top: -90%;
+    padding-right: 20%;
+    margin-bottom: -40%;
+}
+
+.yes {
+    background-color: #74ebd5;
+    background-image: linear-gradient(90deg, #74ebd5 0%, #9caaeb 100%);
+    padding: 490px;
+    margin-left: -52%;
+    margin-top: -10%;
+    padding-right: 149.7%;
+    padding-left: -120%;
+    width: 180%;
+    max-width: 700%;
+}

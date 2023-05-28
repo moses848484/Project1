@@ -1,0 +1,205 @@
+{
+  "user": [
+    {
+      "id": "admin",
+      "name": "Abel",
+      "password": "1234",
+      "email": "Abel@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "admin",
+      "name": "Hassan",
+      "password": "1234",
+      "email": "Hassan@outlook.com",
+      "gender": "male",
+      "isactive": true
+    },
+    {
+      "id": "admin",
+      "name": "Luyando",
+      "password": "1233",
+      "email": "Luyando@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "admin",
+      "name": "Paul",
+      "password": "1235",
+      "email": "Paul@gmail.com",
+      "gender": "male",
+      "isactive": true
+    }
+  ],
+  "role": [
+    {
+      "id": "user",
+      "name": "User"
+    },
+    {
+      "id": "tech",
+      "name": "Technician"
+    }
+  ],
+  "menu": [
+    {
+      "id": "user",
+      "name": "User"
+    },
+    {
+      "id": "customer",
+      "name": "Customer"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "user",
+      "menu": "user",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "user",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "customer": [
+    {
+      "id": 1,
+      "firstname": "Abel",
+      "lastname": "Malusa",
+      "dateofbirth": "2023-05-01T22:00:00.000Z",
+      "gender": "male",
+      "numberofcourses": "3",
+      "namesofcourses": "Biology, Science, Math",
+      "mobilenumber": "0977328912",
+      "nextofkin": "Henry",
+      "nextofkinmobilenumber": "0774583289",
+      "payment": "2700",
+      "balance": "300"
+    },
+    {
+      "id": 2,
+      "firstname": "Paul",
+      "lastname": "Chanda",
+      "dateofbirth": "1986-06-10T22:00:00.000Z",
+      "gender": "male",
+      "numberofcourses": "4",
+      "namesofcourses": "Geology, Commerce, Math, R.E",
+      "mobilenumber": "0977328912",
+      "nextofkin": "Carson",
+      "nextofkinmobilenumber": "0774583289",
+      "payment": "3500",
+      "balance": "500"
+    },
+    {
+      "id": 3,
+      "firstname": "Christopher",
+      "lastname": "Beza",
+      "dateofbirth": "1997-03-10T22:00:00.000Z",
+      "gender": "male",
+      "numberofcourses": "3",
+      "namesofcourses": "Biology, Physics, Math",
+      "mobilenumber": "0977328912",
+      "nextofkin": "Racheal",
+      "nextofkinmobilenumber": "0774583289",
+      "payment": "3000",
+      "balance": "0"
+    },
+    {
+      "id": 4,
+      "firstname": "Luyando",
+      "lastname": "Pongolani",
+      "dateofbirth": "1992-06-18T22:00:00.000Z",
+      "gender": "male",
+      "numberofcourses": "2",
+      "namesofcourses": "Biology, Math",
+      "mobilenumber": "0977328912",
+      "nextofkin": "Rose",
+      "nextofkinmobilenumber": "0774583289",
+      "payment": "1200",
+      "balance": "800"
+    },
+    {
+      "id": 5,
+      "firstname": "Hassan",
+      "lastname": "Phiri",
+      "dateofbirth": "1995-04-05T22:00:00.000Z",
+      "gender": "male",
+      "numberofcourses": "3",
+      "namesofcourses": "Biology, Chemistry, Geology",
+      "mobilenumber": "0977328912",
+      "nextofkin": "Mary",
+      "nextofkinmobilenumber": "0774583289",
+      "payment": "3000",
+      "balance": "0"
+    },
+    {
+      "id": "10",
+      "firstname": "Moses",
+      "lastname": "Simataa",
+      "dateofbirth": "1994-07-21T22:00:00.000Z",
+      "gender": "male",
+      "numberofcourses": "4",
+      "namesofcourses": "Civic ED, English, Math, Science",
+      "mobilenumber": "0774345731",
+      "nextofkin": "Joshua",
+      "nextofkinmobilenumber": "0964245631",
+      "payment": "3500",
+      "balance": "500"
+    },
+    {
+      "id": "vut7hyZ",
+      "firstname": "",
+      "lastname": "",
+      "dateofbirth": "",
+      "gender": "",
+      "numberofcourses": "",
+      "namesofcourses": "",
+      "mobilenumber": "",
+      "nextofkin": "",
+      "nextofkinmobilenumber": "",
+      "payment": "",
+      "balance": ""
+    }
+  ]
+}

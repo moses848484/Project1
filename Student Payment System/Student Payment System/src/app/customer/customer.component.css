@@ -1,0 +1,26 @@
+mat-card {
+    border: none;
+    background-color: #74ebd5;
+    background-image: linear-gradient(90deg, #74ebd5 -10%, #9caaeb 100%);
+    color: #fff;
+}
+
+.main-body {
+    padding-top: 20px;
+    margin: 0 auto;
+    max-width: 3348px;
+    width: 1700px;
+    margin-left: 12%;
+    margin-top: -7%;
+}
+
+body {
+    background-color: #74ebd5;
+    background-image: linear-gradient(90deg, #74ebd5 0%, #9caaeb 100%);
+    padding: 200px;
+    padding-right: 0%;
+    padding-left: -10%;
+    margin-top: -5%;
+    margin-left: -90%;
+    width: 239.6%;
+}

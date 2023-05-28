@@ -1,0 +1,55 @@
+<body>
+
+    <head>
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="/emp-add-edit.component.scss" />
+    </head>
+
+
+    <div class="container-fluid">
+        <div class="row my-5">
+            <div class="col-md-8 offset-md-3">
+                <div class="text-center">
+
+                </div>
+
+
+
+                <div mat-dialog-title class="yes">
+                    <h1>Student Registration Form</h1>
+                </div>
+                <form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+                    <div mat-dialog-content class="content">
+                        <div class="row">
+
+                            <label>Name</label>
+                            <input matInput type="name" placeholder="Ex. Moses" formControlName="name">
+
+
+                        </div>
+
+
+                        <div class="row">
+
+                            <label>id</label>
+                            <input matInput placeholder="id number" formControlName="id">
+
+                        </div>
+                        <div class="row">
+
+                            <label>Creditlimit</label>
+                            <input matInput placeholder="number" type="number" formControlName="creditlimit">
+
+                        </div>
+                    </div>
+
+                    <div mat-dialog-actions class="action">
+                        <button mat-raised-button type="button" mat-dialog-close="false">Cancel</button>
+                        <button mat-raised-button color="primary" type="submit">{{data ? 'Update': 'Save'}}</button>
+                    </div>
+                </form>

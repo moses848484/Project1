@@ -1,0 +1,124 @@
+<body>
+
+    <head>
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="/login.component.css" />
+    </head>
+
+    <div class="container-fluid">
+        <div class="row my-0">
+            <div class="col-md-0 offset-md-0">
+                <div class="text-center">
+
+                </div>
+                <div class="main-body">
+                    <mat-card>
+                        <mat-card-header>
+                            <h2>Student Information</h2>
+
+
+                        </mat-card-header>
+                        <mat-card-content>
+                            <div class="mat-elevation-z8">
+                                <button (click)="addcustomer()" mat-raised-button color="primary">Add Student</button>
+                                <mat-form-field>
+                                    <mat-label>Search</mat-label>
+                                    <input matInput (keyup)="applyFilter($event)" placeholder="filter" #input>
+                                </mat-form-field>
+
+                                <table mat-table matSort [dataSource]="dataSource">
+
+                                    <!-- Position Column -->
+                                    <ng-container matColumnDef="id">
+                                        <th mat-header-cell *matHeaderCellDef> id </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+                                    </ng-container>
+
+                                    <!-- Name Column -->
+                                    <ng-container matColumnDef="firstname">
+                                        <th mat-header-cell mat-sort-header *matHeaderCellDef> First Name </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.firstname}} </td>
+                                    </ng-container>
+
+                                    <!-- Name Column -->
+                                    <ng-container matColumnDef="lastname">
+                                        <th mat-header-cell mat-sort-header *matHeaderCellDef> Last Name </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.lastname}} </td>
+                                    </ng-container>
+
+                                    <!-- Name Column -->
+                                    <ng-container matColumnDef="dateofbirth">
+                                        <th mat-header-cell mat-sort-header *matHeaderCellDef> Date Of Birth </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.dateofbirth | date}} </td>
+                                    </ng-container>
+
+                                    <!-- Name Column -->
+                                    <ng-container matColumnDef="gender">
+                                        <th mat-header-cell mat-sort-header *matHeaderCellDef> Gender </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.gender}} </td>
+                                    </ng-container>
+
+                                    <!-- Name Column -->
+                                    <ng-container matColumnDef="numberofcourses">
+                                        <th mat-header-cell mat-sort-header *matHeaderCellDef> Number Of Courses </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.numberofcourses}} </td>
+                                    </ng-container>
+
+                                    <!-- Name Column -->
+                                    <ng-container matColumnDef="namesofcourses">
+                                        <th mat-header-cell mat-sort-header *matHeaderCellDef> Names Of Courses </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.namesofcourses}} </td>
+                                    </ng-container>
+
+                                    <!-- Name Column -->
+                                    <ng-container matColumnDef="mobilenumber">
+                                        <th mat-header-cell mat-sort-header *matHeaderCellDef> Mobile Number </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.mobilenumber}} </td>
+                                    </ng-container>
+
+                                    <!-- Name Column -->
+                                    <ng-container matColumnDef="nextofkin">
+                                        <th mat-header-cell mat-sort-header *matHeaderCellDef> Next Of Kin </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.nextofkin}} </td>
+                                    </ng-container>
+
+                                    <!-- Name Column -->
+                                    <ng-container matColumnDef="nextofkinmobilenumber">
+                                        <th mat-header-cell mat-sort-header *matHeaderCellDef> Next Of Kin Mobile Number </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.nextofkinmobilenumber}} </td>
+                                    </ng-container>
+
+                                    <!-- Name Column -->
+                                    <ng-container matColumnDef="payment">
+                                        <th mat-header-cell mat-sort-header *matHeaderCellDef> Payment </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.payment | currency:'ZMW'}} </td>
+                                    </ng-container>
+
+                                    <!-- Weight Column -->
+                                    <ng-container matColumnDef="balance">
+                                        <th mat-header-cell *matHeaderCellDef> Balance </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.balance | currency:'ZMW'}} </td>
+                                    </ng-container>
+
+                                    <ng-container matColumnDef="action">
+                                        <th mat-header-cell *matHeaderCellDef> Action </th>
+                                        <td mat-cell *matCellDef="let element">
+                                            <button (click)="updatecustomer(element)" mat-raised-button color="primary">Edit</button>
+                                            <button (click)="removecustomer(element.id)" mat-raised-button color="accent">Delete</button>
+                                        </td>
+                                    </ng-container>
+
+                                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                </table>
+
+                                <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of periodic elements">
+                                </mat-paginator>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>

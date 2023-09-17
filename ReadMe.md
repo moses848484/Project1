@@ -11,3 +11,6 @@ and have json server watch running in order to authenticate the admin.
 
 Start the json server before starting the application with:
 -npx json-server --watch db.json
+
+Then to run the project
+-npm start 

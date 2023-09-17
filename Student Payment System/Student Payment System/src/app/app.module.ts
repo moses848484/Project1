@@ -29,8 +29,6 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {NgxPrintModule} from 'ngx-print';
 import { EmpAddEditComponent } from './emp-add-edit/emp-add-edit.component';
-import { CalendarModule} from '@syncfusion/ej2-angular-calendars';
-import { ScheduleModule, RecurrenceEditorModule, DayService, WeekService, WorkWeekService, MonthService, MonthAgendaService  } from '@syncfusion/ej2-angular-schedule';
 
 @NgModule({
   declarations: [
@@ -49,9 +47,6 @@ import { ScheduleModule, RecurrenceEditorModule, DayService, WeekService, WorkWe
     BrowserAnimationsModule,
     ReactiveFormsModule,
     NgxPrintModule,
-    CalendarModule,
-    ScheduleModule,
-    RecurrenceEditorModule,
     MaterialModule,
     MatDialogModule,
     MatToolbarModule,
@@ -70,7 +65,6 @@ import { ScheduleModule, RecurrenceEditorModule, DayService, WeekService, WorkWe
     HttpClientModule,
     ToastrModule.forRoot()
   ],
-  providers: [DayService, WeekService, WorkWeekService, MonthService, MonthAgendaService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

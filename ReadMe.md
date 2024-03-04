@@ -12,6 +12,7 @@ and have json server watch running in order to authenticate the admin.
 
 Start the json server before starting the application with:
 using the command, npx json-server --watch db.json
+using the command, npm install -g json-server
 
 Then to run the project
 using the command, npm start 

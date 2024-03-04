@@ -4,7 +4,7 @@ Prerequisites:
 
 Setting Up a Project:
 -Install the Angular CLI globally,
--npm install -g @angular/cli
+using the command, npm install -g @angular/cli
 
 Have installed visual studio code with npm dependencies and launch the folder from an integrated terminal in visual studio
 and have json server watch running in order to authenticate the admin.
